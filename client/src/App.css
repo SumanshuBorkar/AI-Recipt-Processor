@@ -1,0 +1,62 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.main-content {
+  padding: 20px;
+  min-height: calc(100vh - 72px);
+}
+
+.card {
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.upload-area {
+  border: 2px dashed #0d6efd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(13, 110, 253, 0.05);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.upload-area:hover {
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+.upload-area.active {
+  border-color: #198754;
+  background-color: rgba(25, 135, 84, 0.1);
+}
+
+.upload-icon {
+  font-size: 3rem;
+  color: #0d6efd;
+}
+
+.status-badge {
+  font-size: 0.8rem;
+  padding: 0.4em 0.6em;
+}
+
+.fw-bold {
+  font-weight: 600;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}

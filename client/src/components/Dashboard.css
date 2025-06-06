@@ -1,0 +1,94 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-header p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+  
+  .upload-section,
+  .info-card {
+    background-color: #fefefe;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  .info-card h3 {
+    margin-bottom: 12px;
+  }
+  
+  .info-card ol {
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .info-note {
+    font-size: 0.95rem;
+    color: #777;
+  }
+  
+  .section {
+    margin-top: 40px;
+  }
+  
+  .section-title {
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* Loading Spinner Styles */
+  .dashboard-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .spinner {
+    border: 5px solid #eee;
+    border-top: 5px solid #007bff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 16px;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .dashboard-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

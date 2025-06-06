@@ -1,0 +1,91 @@
+.filelist-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+  }
+  
+  .filelist-title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  .filelist-empty {
+    color: #888;
+    font-style: italic;
+  }
+  
+  .filelist-table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .filelist-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .filelist-table th,
+  .filelist-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .filelist-table th {
+    background-color: #f7f7f7;
+    color: #444;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    margin-right: 6px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .badge-success {
+    background-color: #28a745;
+  }
+  
+  .badge-danger {
+    background-color: #dc3545;
+  }
+  
+  .badge-info {
+    background-color: #17a2b8;
+  }
+  
+  .btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.2s ease;
+    color: white;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e0a800;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  
