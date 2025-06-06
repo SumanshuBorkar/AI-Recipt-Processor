@@ -9,7 +9,7 @@ const db = knex({
   useNullAsDefault: true
 });
 
-// Create tables
+
 const initializeDB = async () => {
   try {
     // Create receipt_file table
@@ -28,7 +28,6 @@ const initializeDB = async () => {
       }
     });
 
-    // Create receipt table
     await db.schema.hasTable('receipt').then(async (exists) => {
       if (!exists) {
         await db.schema.createTable('receipt', (table) => {
@@ -43,19 +42,19 @@ const initializeDB = async () => {
       }
     });
 
-    // Add after receipt table creation
-await db.schema.hasTable('receipt_items').then(async (exists) => {
-  if (!exists) {
-    await db.schema.createTable('receipt_items', (table) => {
-      table.increments('id').primary();
-      table.integer('receipt_id').unsigned().references('id').inTable('receipt');
-      table.integer('quantity').defaultTo(1);
-      table.string('description').notNullable();
-      table.decimal('price', 10, 2).notNullable();
-      table.timestamp('created_at').defaultTo(db.fn.now());
+
+    await db.schema.hasTable('receipt_items').then(async (exists) => {
+      if (!exists) {
+        await db.schema.createTable('receipt_items', (table) => {
+          table.increments('id').primary();
+          table.integer('receipt_id').unsigned().references('id').inTable('receipt');
+          table.integer('quantity').defaultTo(1);
+          table.string('description').notNullable();
+          table.decimal('price', 10, 2).notNullable();
+          table.timestamp('created_at').defaultTo(db.fn.now());
+        });
+      }
     });
-  }
-});
 
     console.log('Database initialized successfully');
   } catch (error) {
