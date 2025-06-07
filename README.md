@@ -70,7 +70,13 @@ npm install
 cd ../Server
 npm install
 ```
-
+4. Setup server .env file:
+```bash
+PORT=5001
+UPLOAD_DIR=./uploads
+COHERE_API_KEY=4ncMblhGXKhxoiC8F5O36C7i4Bcm3Ehl43vt2WSS
+NODE_ENV=development
+```
 ### Running the Application
 
 1. Start the backend server:
