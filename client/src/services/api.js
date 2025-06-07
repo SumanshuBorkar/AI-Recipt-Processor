@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5001/api';
+const API_BASE_URL = 'https://ai-recipt-processor-server.onrender.com/api';
 
 // File operations
 export const uploadFile = (file) => {
