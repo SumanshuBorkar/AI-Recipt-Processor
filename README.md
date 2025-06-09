@@ -102,6 +102,8 @@ The application will be available at `http://localhost:3000`
 - Secure file handling
 - Modern and responsive UI
 
+https://uml.planttext.com/plantuml/svg/jPHDJy9048Rl_HLpB8b4zCZ144MCyG3Xws9CCxHZNIbjipi5VxwxTFi5BNZnr6RcwJlppivsf1WbPxl8GPyJ2Ij5qabrIFWYnPXX8fEOAGuQmKVqjwUnCJ9kK54ZE7sQBqZkXK-EOwIX_r0g3c6LHWa6C1jFu5D4v1GPGzaIGvXD5qkupNBKDLpFiKd35MM7e71FS_99f3pHr17rTiJOSme8-dNb6Wp9vfjyheGRVTuFxk194ZBP3gniYwMb566eWtkCH80ialYIAqjHhleQT3WBgN9aeAjswZ9bVbqKC_DMB3EVCqdj5RFKaElIn8AHCsKRkCdTTVMnEduRjFTpCjS1JD_0hORbIL9Pn1T7cyh49wL475uQhQN-SxBLSW-1VbZg6xJKptn3KkIldbCXfn_ezxgJEjWeZGTWBTfLLrysLMozQTurSAzJRb4SUm1wu7Zr8hdM5mMUuQyCwEmMrLLtABTcWhFSD0Nd9zEw73BNjlLRzc8jw02MKkqhyVAiDw94kZR1kb3k5Pll7tzhMNcHKFemHZgf_x2_
+
 ## API Endpoints
 
 The backend provides various endpoints for PDF processing and analysis. Detailed API documentation can be found in the server's routes.js file.
